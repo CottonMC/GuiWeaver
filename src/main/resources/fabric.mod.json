@@ -1,36 +1,34 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "guiweaver",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Gui Weaver",
+  "description": "The true GUI toolkit for Minecraft",
   "authors": [
-    "Me!"
+    "Nickolay (handicraftsman_) Ilyushin <nickolay.ilyushin@gmail.com>",
+    "CottonMC devs"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/CottonMC/GuiWeaver",
+    "sources": "https://github.com/CottonMC/GuiWeaver"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/guiweaver/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleModKt::init"
+      "io.github.cottonmc.guiweaver.GuiWeaverModKt::init"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "guiweaver.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.4.0",
     "fabric": "*",
     "fabric-language-kotlin": "*"
-  },
-  "suggests": {
-    "flamingo": "*"
   }
 }
